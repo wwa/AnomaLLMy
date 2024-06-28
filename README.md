@@ -19,7 +19,7 @@ AnomaLLMy uses top-N log-probabilities as returned by high-level completion API 
 3. Small difference between top1 and top2 prediction
 
 # Why?
-It was fun! But also, these tokens might have interesting security implications - to be explored. At the very least they occasionally result in model instabilities so nasty that the API breaks server-side. I've seen JSON schema violations and a few 400:BadRequests with error messages along the lines of "model does not exist".
+It was fun! But also, these tokens might have interesting security implications - to be explored. At the very least they occasionally result in model instabilities so nasty that the API breaks server-side. I've seen JSON schema violations, a few 400:BadRequests with error messages along the lines of "model does not exist" and in rare cases no results at all - an empty array of log-probabilities, which should not be possible with a Transformer.
 
 # Show me
 An example of a hilariously under-trained token in gpt-4-1106 found by AnomaLLMy:

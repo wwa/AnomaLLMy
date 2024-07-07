@@ -1,5 +1,6 @@
 # AnomaLLMy
 AnomaLLMy - detecting anomalous LLM tokens through low-confidence single-token predictions
+
 [AnomaLLMy paper](https://arxiv.org/abs/2406.19840)
 
 # What does it do?
